@@ -98,6 +98,13 @@ nav {
   margin-left: auto;
 }
 
+.header-svgs {
+  padding-right: 10px;
+}
+.header-box {
+  width: 161px;
+  display: flex;
+}
 .header-nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -149,9 +156,12 @@ nav {
 
 /* HERO */
 .hero-box {
-  background-color: var(--dark-background-color);
   padding: 200px 0;
   text-align: center;
+
+  background-image: url(../images/icons.svg/team.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-studio {
@@ -211,7 +221,19 @@ nav {
 
 .main-list-benefits {
 }
-
+.benefit-svg-list {
+  width: 270px;
+  height: 120px;
+  background-color: var(--light-background-color);
+}
+.benefit-svg {
+}
+.benefits-svgs {
+  display: flex;
+  gap: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
 .benefits-list {
   display: flex;
   gap: 30px;
