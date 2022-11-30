@@ -227,6 +227,7 @@ nav {
   background-color: var(--light-background-color);
 }
 .benefit-svg {
+  padding: 25px 100px;
 }
 .benefits-svgs {
   display: flex;
@@ -282,6 +283,15 @@ nav {
   background-color: var(--light-background-color);
 }
 
+.team-social-links {
+  display: flex;
+  width: 206px;
+  height: 44px;
+  justify-content: space-between;
+  margin: 32px 16px;
+  margin-bottom: 30px;
+}
+
 .about-title-team {
   font-style: normal;
   font-weight: 700;
@@ -298,6 +308,7 @@ nav {
 
 .teammate {
   background-color: var(--white-text-color);
+  height: 428px;
 }
 
 .teammate-box {
@@ -319,6 +330,37 @@ nav {
   text-align: center;
   color: var(--description-color);
   margin-top: 10px;
+}
+
+.customer-container {
+  margin: 94px 0;
+}
+
+.regular-customers-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  color: var(--black-text-color);
+}
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.customer-box {
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.company-logo {
+  display: flex;
+  justify-content: center;
+  padding: 16px 32px;
 }
 
 /*------- FOOTER ---------*/
@@ -360,6 +402,29 @@ nav {
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
   gap: 9px;
+}
+.join-us {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white-text-color);
+  display: flex;
+}
+.footer-address {
+  display: flex;
+}
+
+.social-list-container {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  padding-top: 20px;
 }
 
 .geolocation:hover,
@@ -431,19 +496,4 @@ nav {
   border: 1px solid #eeeeee;
 }
 .options-list-item {
-}
-
-.first-line {
-  display: flex;
-  width: 1170px;
-}
-
-.second-line {
-  display: flex;
-  width: 1170px;
-}
-
-.third-line {
-  display: flex;
-  width: 1170px;
 }
