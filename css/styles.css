@@ -98,9 +98,19 @@ nav {
   margin-left: auto;
 }
 
-.header-svgs {
-  padding-right: 10px;
+.header-svg1 {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
 }
+.header-svg2 {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-box {
   width: 161px;
   display: flex;
@@ -144,6 +154,7 @@ nav {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--description-color);
+  display: flex;
 }
 
 .header-mail-link {
@@ -152,16 +163,21 @@ nav {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--description-color);
+  display: flex;
 }
 
 /* HERO */
 .hero-box {
   padding: 200px 0;
   text-align: center;
-
-  background-image: url(../images/icons.svg/team.svg);
+  background-size: cover;
+  background: linear-gradient(rgba(47, 48, 58, 1), rgba(47, 48, 58, 1));
+  background-image: url(../images/team.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-studio {
@@ -221,13 +237,19 @@ nav {
 
 .main-list-benefits {
 }
-.benefit-svg-list {
+.svg-container {
   width: 270px;
   height: 120px;
   background-color: var(--light-background-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 .benefit-svg {
-  padding: 25px 100px;
+  width: 70px;
+  height: 70px;
 }
 .benefits-svgs {
   display: flex;
@@ -285,13 +307,17 @@ nav {
 
 .team-social-links {
   display: flex;
-  width: 206px;
-  height: 44px;
-  justify-content: space-between;
-  margin: 32px 16px;
-  margin-bottom: 30px;
+  justify-content: center;
 }
-
+.social-link {
+  color: var(--description-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
 .about-title-team {
   font-style: normal;
   font-weight: 700;
@@ -308,7 +334,15 @@ nav {
 
 .teammate {
   background-color: var(--white-text-color);
-  height: 428px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.teammate-link {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 .teammate-box {
@@ -361,6 +395,13 @@ nav {
   display: flex;
   justify-content: center;
   padding: 16px 32px;
+  color: var(--description-color);
+}
+
+.company {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /*------- FOOTER ---------*/
@@ -426,7 +467,21 @@ nav {
   justify-content: left;
   padding-top: 20px;
 }
+.footer-social-item {
+  color: var(--white-text-color);
+}
 
+.social-link-footer {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.footer-social-item:hover,
+.company-logo:hover,
+.team-social-link:hover,
+.social-link:hover,
+.header-svgs:hover,
+.header-svgs:focus,
 .geolocation:hover,
 .geolocation:focus,
 .footer-list-mail:hover,
